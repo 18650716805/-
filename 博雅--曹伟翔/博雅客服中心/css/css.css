@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    margin-bottom: 0px
+}
+body{
+    min-width:1200px
+}
+.av {
+    width: 100%;
+    height: 60px;
+    background-color: #191d3a;
+}
+
+.contain {
+    width: 1200px;
+    height: 60px;
+    margin: 0 auto;
+    background-color: #191d3a;
+}
+.back{
+    position: fixed;
+  top: 75px;
+    left: 15px;
+    font-size: 12px;
+    background-color: #c7d6e5;
+    border: 1px solid #c7d6e5;
+    font-weight: 800;
+    z-index: 99999;
+
+}
+.back a{
+    text-decoration: none;
+    color:white;
+}
+.brand {
+    cursor: pointer;
+   float: left;
+    padding-right: 10px;
+    border-right: 1px solid #252947;
+}
+.navgation .hit,.navgation .hit a{
+    background-color: #252947;
+    color: #fff;
+}
+.navgation {
+    width: 630px;
+    height: 60px;
+    float: left;
+    vertical-align: bottom;
+    position: relative;
+    left: -4px;
+    margin-bottom: 0;
+}
+
+.navgation li {
+    float: left;
+    width: 99px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    border-right: 1px solid #252947;
+}
+
+.navgation li a {
+    color: #818496;
+    text-decoration: none;
+}
+
+.navgation li a:hover {
+    color: white;
+}
+
+.btn-self {
+    float: left;
+    position: relative;
+    left: -5px;
+    padding: 6px 18px;
+    margin-top:15px; 
+    margin-right: 15px;
+}
+.btn-self a{
+    text-decoration: none;
+    color:#fff;
+}
+.txt-contain {
+    float: left;
+    width: 48px;
+    height: 60px;
+   
+    text-align: center;
+    line-height: 60px;
+    
+}
+
+.txt-contain span {
+    cursor: pointer;
+    float: left; 
+    color: #2b503c;
+}
+
+.txt-contain .txt-color {
+    color: #38b774;
+    margin-right: 10px
+}
+.main {
+    width: 1200px;
+    margin: 0 auto;
+    min-width: 1200px;
+}
+
+.foot {
+    height: 191px;
+}
+
+.foot-contain {
+    height: 100%;
+    color: #6c6e7e;
+    font-size: 12px;
+    position: relative;
+    background-color: #191d3a;
+}
+
+.foot-contain p {
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    margin: 20px 0;
+}
+
+.foot-contain p span {
+    transition: color .3s;
+}
+
+.foot-contain p span:hover {
+    color: white
+}
+
+.gov {
+    width: 36px;
+    height: 50px;
+    display: inline-block;
+    background: url('../img/govIcon.gif') no-repeat;
+    background-size: 100%;
+    position: absolute;
+    right: 425px;
+    top: 100px;
+    cursor: pointer;
+}
+
+.totop {
+    position: fixed;
+    bottom: 75px;
+    right: 15px;
+    font-size: 12px;
+    background-color: #c7d6e5;
+    border: 1px solid #c7d6e5;
+    font-weight: 800;
+    z-index: 99999;
+}
+
+.aboutbanner {
+    width: 100%;
+    height: 254px;
+    background: url('../img/faqbanner.jpg')no-repeat center;
+    min-width: 1200px;
+}
+.container{
+    min-width: 1200px;
+}
+.container-top {
+    margin-top: 15px;
+    border-bottom: 1px solid #c7d6e5;
+    padding-bottom: 35px;
+}
+
+.container-top .left {
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    color: #444866;
+    padding-left: 30px;
+    background: url('../img/location.png') no-repeat 0 -189px;
+}
+
+.container-top .right {
+    text-align: center;
+    height: 28px;
+    line-height: 28px;
+    font-size: 12px;
+    float: right;
+}
+
+.container-top .right img {
+    position: relative;
+    top: -2px
+}
+
+.container-top .right span {
+    display: inline-block;
+    padding-left: 15px;
+    margin-left: 5px;
+    text-decoration: none;
+    color: #444866;
+}
+
+.right-com {
+    background: url('../img/icon.png')no-repeat 0 -140px
+}
+
+.container-top .right .right-com:hover {
+    color: #38b774;
+}
+
+.container-main {
+   
+    overflow: hidden;
+}
+
+.maincomm {
+    height: 135px;
+    width: 340px;
+    float: left;
+    background-color: #f1f1f1;
+    margin: 35px 20px 30px;
+    border-radius: 5px;
+    color: #444866;
+}
+
+.maincomm div {
+    width: 80px;
+    height: 50px;
+    margin: 15px auto 10px;
+}
+
+.maincomm .pic1 {
+    background: url('../img/faqicon.png') no-repeat 17px -15px;
+}
+
+.maincomm .pic2 {
+    background: url('../img/faqicon.png') no-repeat 7px -214px;
+}
+
+.maincomm .pic3 {
+    background: url('../img/faqicon.png') no-repeat 7px -145px;
+}
+
+.maincomm p {
+    line-height: 20px;
+    font-size: 1.166em;
+    text-align: center;
+    margin: 0;
+}
+
+.maincomm h1 {
+    margin: 0;
+    text-align: center;
+    line-height: 26px;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.maincomm h1 img {
+    margin-left: 3px;
+    position: relative;
+    top: -2px
+}
+
+.maincomm h1 a {
+    color: #444866;
+}
+
+.container-main-foot {
+    height: 305px;
+}
+
+.foot-coom {
+    display: inline-block;
+    background: #fff;
+    width: 25%;
+    height: 141px;
+    border: 1px solid #dbe1e7;
+    margin-left: -5px;
+    margin-bottom: -6px;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.foot-coom:hover {
+    background-color: #f1f1f1;
+    font-weight: bold;
+}
+
+.foot-coom img {
+    display: block;
+    margin: 35px auto 0;
+}
+
+.foot-coom p {
+    text-align: center;
+    line-height: 36px;
+    color: #444866;
+    font-size: 1.166em;
+}
+
+.foot-nocoom {
+    position: relative;
+    top: 5px;
+}

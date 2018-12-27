@@ -1,0 +1,112 @@
+.st-resume {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin:0;
+    font:20px microsoft yahei;
+}
+
+.st-resume input,
+.st-resume a {
+    width: 20%;
+    height: 50px;
+    line-height: 50px;
+    position: fixed;
+    bottom: 0;
+    cursor: pointer;
+}
+
+.st-resume input {
+    opacity: 0;
+    z-index: 1000;
+}
+
+.st-resume a {
+    z-index: 10;
+    font-weight: 700;
+    font-size: 22px;
+    background: #e23030;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px 1px rgba(151, 24, 64, 0.2);
+}
+
+.st-resume input:hover + a{
+    background: #ca1512;
+}
+
+.st-resume input:active + a{
+    background: #ca3c30;
+}
+
+#st-control-1,
+#st-control-1 + a {
+    left: 0;
+}
+
+#st-control-2,
+#st-control-2 + a {
+    left: 20%;
+}
+
+#st-control-3,
+#st-control-3 + a {
+    left: 40%;
+}
+
+#st-control-4,
+#st-control-4 + a {
+    left: 60%;
+}
+
+#st-control-5,
+#st-control-5 + a {
+    left: 80%;
+}
+
+.st-resume input:checked + a {
+    background: #ca1512;
+}
+
+.st-scroll,
+.st-resume,
+.st-panel {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+
+}
+
+.st-scroll {
+    left: 0;
+    top: 0;
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    -webkit-transition: all 0.6s ease-in-out;
+    color: #fff;
+}
+
+
+
+#st-control-1:checked ~ .st-scroll {
+    transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+}
+#st-control-2:checked ~ .st-scroll {
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+}
+#st-control-3:checked ~ .st-scroll {
+    transform: translateY(-200%);
+    -webkit-transform: translateY(-200%);
+}
+#st-control-4:checked ~ .st-scroll {
+    transform: translateY(-300%);
+    -webkit-transform: translateY(-300%);
+}
+#st-control-5:checked ~ .st-scroll {
+    transform: translateY(-400%);
+    -webkit-transform: translateY(-400%);
+}

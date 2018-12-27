@@ -1,0 +1,379 @@
+
+body {
+    font: 14px "microsoft yahei";
+    background: url(../images/bg.png);
+    margin: 0;
+    padding: 0;
+    animation: fade-in;
+    animation-duration: 0.5s;
+    -webkit-animation: fade-in 0.5s;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*����*/
+
+@keyframes fade-in {
+    0% {
+        opacity: 0
+    }
+    /*��ʼ״̬ ͸����Ϊ0*/
+    20% {
+        opacity: 0.2
+    }
+    40% {
+        opacity: 0.4
+    }
+    40% {
+        opacity: 0.4
+    }
+    60% {
+        opacity: 0.6
+    }
+    80% {
+        opacity: 0.8
+    }
+    100% {
+        opacity: 1
+    }
+    /*����״̬ ͸����Ϊ1*/
+}
+
+.back a:hover {
+    color: dodgerblue;
+}
+
+/*���˼��*/
+
+.st-resume {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: 0;
+    font: 20px microsoft yahei;
+}
+
+.st-resume input,
+.st-resume a {
+    width: 20%;
+    height: 50px;
+    line-height: 50px;
+    position: fixed;
+    bottom: 0;
+    cursor: pointer;
+}
+
+.st-resume input {
+    opacity: 0;
+    z-index: 1000;
+}
+
+.st-resume a {
+    z-index: 10;
+    font-weight: 700;
+    font-size: 22px;
+    background: #e23030;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px 1px rgba(151, 24, 64, 0.2);
+}
+
+.st-resume input:hover + a {
+    background: #ca1512;
+}
+
+.st-resume input:active + a {
+    background: #ca3c30;
+}
+
+#st-control-1,
+#st-control-1 + a {
+    left: 0;
+}
+
+#st-control-2,
+#st-control-2 + a {
+    left: 20%;
+}
+
+#st-control-3,
+#st-control-3 + a {
+    left: 40%;
+}
+
+#st-control-4,
+#st-control-4 + a {
+    left: 60%;
+}
+
+#st-control-5,
+#st-control-5 + a {
+    left: 80%;
+}
+
+.st-resume input:checked + a {
+    background: #ca1512;
+}
+
+.st-scroll,
+.st-resume,
+.st-panel {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+
+}
+
+.st-scroll {
+    left: 0;
+    top: 0;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    transition: all 0.6s ease-in-out;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transform: translate3d(0, 0, 0);
+    -moz-backface-visibility: hidden;
+    -moz-transition: all 0.6s ease-in-out;
+    -o-transform: translateY(-300%);
+    -o-transition: all 0.6s ease-in-out;
+    -ms-transform: translate3d(0, 0, 0);
+    color: #fff;
+}
+
+#st-control-1:checked ~ .st-scroll {
+    transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+}
+
+#st-control-2:checked ~ .st-scroll {
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+}
+
+#st-control-3:checked ~ .st-scroll {
+    transform: translateY(-200%);
+    -webkit-transform: translateY(-200%);
+    -moz-transform: translateY(-200%);
+    -o-transform: translateY(-200%);
+    -ms-transform: translateY(-200%);
+}
+
+#st-control-4:checked ~ .st-scroll {
+    transform: translateY(-300%);
+    -webkit-transform: translateY(-300%);
+    -moz-transform: translateY(-300%);
+    -o-transform: translateY(-300%);
+    -ms-transform: translateY(-300%);
+}
+
+#st-control-5:checked ~ .st-scroll {
+    transform: translateY(-400%);
+    -webkit-transform: translateY(-400%);
+    -moz-transform: translateY(-400%);
+    -o-transform: translateY(-400%);
+    -ms-transform: translateY(-400%);
+}
+
+.title {
+    margin: 30px auto;
+    font-size: 36px;
+    width: 150px;
+}
+
+.wrap-text {
+    width: 1000px;
+    height: 380px;
+    margin: 0 auto;
+}
+
+.wrap-text p {
+    line-height: 36px
+}
+
+.text-left {
+    float: left;
+    margin: 20px 90px;
+}
+
+.line {
+    width: 1px;
+    height: 310px;
+    background: #fff;
+    float: left;
+    margin: 20px 70px;
+}
+
+.text-right {
+    margin: 20px 90px;
+    float: left;
+}
+
+p {
+    font-size: 24px;
+}
+
+.item-wrap {
+    margin: 0 auto;
+    width: 980px;
+    display: flex;
+}
+
+.item a {
+    margin-left: -160px;
+    width: 200px;
+    height: 180px;
+    background: none;
+}
+
+.item2 a {
+    margin-left: -134px;
+    width: 300px;
+    height: 180px;
+    background: none;
+}
+
+.item {
+    width: 200px;
+    height: 180px;
+    float: left;
+    margin: 10px;
+}
+
+.item2 {
+    width: 300px;
+    height: 180px;
+    float: left;
+    margin: 10px;
+}
+
+.img {
+    margin: 4px auto 15px auto;
+    height: 120px;
+    width: 120px;
+}
+
+.img2 {
+    margin: 5px 0 11px 15px;
+    height: 120px;
+    width: 120px;
+}
+
+.img3 {
+    margin: 5px 0 11px 15px;
+    height: 120px;
+    width: 120px;
+}
+
+.text {
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+}
+
+.text2 {
+    margin: 0 0 0 15px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.item:hover,
+.item2:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.item:hover,
+.item2:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.skills-wrap {
+    width: 840px;
+    margin: 0 auto;
+}
+
+.skills-wrap p {
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.skills {
+    width: 120px;
+    height: 120px;
+    background: #eee;
+    float: left;
+    margin: 10px;
+    text-align: center;
+    font: normal 30px/120px microsoft yahei;
+}
+
+.st-desc {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background: #26ca97;
+    margin: 0 auto 10px auto;
+    font-size: 24px;
+    line-height: 140px;
+    text-align: center;
+
+}
+
+.skills-text {
+    font-size: 16px;
+    float: left;
+    margin: 0 10px 30px 10px;
+    width: 120px;
+    text-align: center;
+}
+
+.like-wrap {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.like{
+	float:left;
+    margin:100px 0;
+	width:220px;
+    height:40px;
+	font:28px microsoft yahei;
+}
+
+.contact {
+    margin: 50px 150px;
+    float: left;
+    width: 240px;
+    height: 240px;
+}
+
+.contact-mid {
+    float: left;
+    margin: 50px 260px;
+}
+
+.contact-text {
+    width: 240px;
+    text-align: center;
+
+}
+
+/*�������*/
+
+.clr {
+    clear: both;
+}

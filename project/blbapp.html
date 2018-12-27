@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>APP UI</title>
+    <link rel="stylesheet" href="CSS/play.css"/>
+    <script src="js/jquery-1.8.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/scripts.js"></script>
+</head>
+<body>
+<!--<nav class="nav">-->
+<!--<span >-->
+<!--<ul>-->
+<!--<li>-->
+<!--<a href="index.html">主页</a>-->
+<!--</li>-->
+<!--<li>-->
+<!--<a href="index.html">个人简介</a>-->
+<!--</li>-->
+<!--<li>-->
+<!--<a href="collection.html">作品集</a>-->
+<!--<ul >-->
+<!--<li><a href="icon2.html">图标设计</a></li>-->
+<!--<li><a href="icon2.html">APP设计</a></li>-->
+<!--<li><a href="icon2.html">网页设计</a></li>-->
+<!--</ul>-->
+<!--</li>-->
+<!--</ul>-->
+<!--</span>-->
+<!--</nav>-->
+<div class="back" style="z-index:999"><a href="../index.html">返回</a></div>
+<a href="#" class="btn"></a>
+
+<div id="gallery-container">
+    <ul class="items--small">
+        <li class="item"><a href="#"><img src="images/blb-index.png"></a></li>
+        <li class="item"><a href="#"><img src="images/blb-pre-search.png"></a></li>
+        <!-- <li class="item"><a href="#"><img src="images/blb-search.png"></a></li> -->
+        <li class="item"><a href="#"><img src="images/blb-sort.png"></a></li>
+        <li class="item"><a href="#"><img src="images/blb-cart.png"></a></li>
+        <li class="item"><a href="#"><img src="images/blb-register.png"></a></li>
+        <li class="item"><a href="#"><img src="images/blb-login.png"></a></li>
+        <!-- <li class="item"><a href="#"><img src="images/blb-person.png"/></a></li>ss -->
+        <!-- <li class="item"><a href="#"><img src="images/blb-detail.png"></a></li> -->
+        
+    </ul>
+    <ul class="items--big">
+        <li class="item--big">
+            <a href="#">
+                <figure>
+                    <img src="images/blb-index.png" alt=""/>
+                    <figcaption class="img-caption">
+                        便利宝首页
+                    </figcaption>
+                </figure>
+            </a>
+        </li>
+        <li class="item--big">
+            <a href="#">
+                <figure>
+                    <img src="images/blb-pre-search.png" alt=""/>
+                    <figcaption class="img-caption">
+                        搜索框
+                    </figcaption>
+                </figure>
+            </a>
+        </li>
+        <li class="item--big">
+            <a href="#">
+                <figure>
+                    <img src="images/blb-search.png" alt=""/>
+                    <figcaption class="img-caption">
+                        搜索页
+                    </figcaption>
+                </figure>
+            </a>
+        </li>
+        <li class="item--big">
+            <a href="#">
+                <figure>
+                    <img src="images/blb-sort.png" alt=""/>
+                    <figcaption class="img-caption">
+                        分类页
+                    </figcaption>
+                </figure>
+            </a>
+        </li>
+        <li class="item--big">
+            <a href="#">
+                <figure>
+                    <img src="images/blb-cart.png" alt=""/>
+                    <figcaption class="img-caption">
+                        购物车
+                    </figcaption>
+                </figure>
+            </a>
+        </li>
+      
+           <li class="item--big">
+            <a href="#">
+                <figure>
+                    <img src="images/blb-register.png" alt=""/>
+                    <figcaption class="img-caption">
+                        注册页
+                    </figcaption>
+                </figure>
+            </a>
+        </li>
+           <li class="item--big">
+            <a href="#">
+                <figure>
+                    <img src="images/blb-login.png" alt=""/>
+                    <figcaption class="img-caption">
+                        登录页
+                    </figcaption>
+                </figure>
+            </a>
+        </li>
+
+    </ul>
+    <div class="controls">
+        <span class="control icon-arrow-left" data-direction="previous"></span>
+        <span class="control icon-arrow-right" data-direction="next"></span>
+        <span class="grid icon-grid"></span>
+        <span class="fs-toggle icon-fullscreen"></span>
+    </div>
+</div>
+
+
+<script>
+    $(document).ready(function () {
+        $('#gallery-container').sGallery({
+            fullScreenEnabled: true
+        });
+        alert("若想体验功能，请您用VScode打开目录文件下的blb文件夹，打开终端ctrl+`,输入指令npm run serve,并打开链接")
+    });
+</script>
+</body>
+</html>

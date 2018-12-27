@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>WEB UI</title>
+    <link rel="stylesheet" href="CSS/play.css"/>
+    <script src="js/jquery-1.8.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/scripts.js"></script>
+</head>
+<body>
+<div class="back" style="z-index:999"><a href="../index.html">返回</a></div>
+<a href="#" class="btn"></a>
+<div id="gallery-container">
+    <ul class="items--small">
+        <li class="item"><a href="#"><img src="images/boyaa首页.png"/></a></li>
+        <li class="item"><a href="#"><img src="images/boyaa游戏.png"/></a></li>
+        <li class="item"><a href="#"><img src="images/boyaa游戏2.png"/></a></li>
+        <li class="item"><a href="#"><img src="images/aboutus.png"/></a></li>
+        <li class="item"><a href="#"><img src="images/aboutus2.png"/></a></li>
+        <li class="item"><a href="#"><img src="images/joinUs.png"/></a></li>
+
+    </ul>
+    <ul class="items--big">
+        <li class="item--big">
+            <a href="#">
+                <figure>
+                   <a href="../博雅--曹伟翔/博雅首页/index.html"><img src="images/boyaa首页.png" alt=""/></a> 
+                    <figcaption class="img-caption">
+                       boyaa首页
+                    </figcaption>
+                </figure>
+            </a>
+        </li>
+        <li class="item--big">
+            <a href="#">
+                <figure>
+                    <a href="../博雅--曹伟翔/博雅互动/index.html"><img src="images/boyaa游戏.png" alt=""/></a>
+                    <figcaption class="img-caption">
+                        boyaa游戏
+                    </figcaption>
+                </figure>
+            </a>
+        </li>
+        <li class="item--big">
+            <a href="#">
+                <figure>
+                    <a href="../博雅--曹伟翔/博雅互动/index.html"> <img src="images/boyaa游戏2.png" alt=""/></a>
+                    <figcaption class="img-caption">
+                        boyaa游戏详情
+                    </figcaption>
+                </figure>
+            </a>
+        </li>
+        <li class="item--big">
+            <a href="#">
+                <figure>
+                    <a href="../博雅--曹伟翔/博雅关于我们/index.html">  <img src="images/aboutus.png" alt=""/>
+                    <figcaption class="img-caption">
+                        boyaa关于我们
+                    </figcaption>
+                </figure>
+            </a>
+        </li>
+        <li class="item--big">
+            <a href="#">
+                <figure>
+                    <a href="../博雅--曹伟翔/博雅客服中心/index.html">   <img src="images/aboutus2.png" alt=""/></a>
+                    <figcaption class="img-caption">
+                        boyaa客服中心
+                    </figcaption>
+                </figure>
+            </a>
+        </li>
+        <li class="item--big">
+            <a href="#">
+                <figure>
+                    <a href="../博雅--曹伟翔/博雅加入我们/index.html">     <img src="images/joinUs.png" alt=""/>
+                    <figcaption class="img-caption">
+                        boyaa加入我们
+                    </figcaption>
+                </figure>
+            </a>
+        </li>
+
+    </ul>
+    <div class="controls">
+        <span class="control icon-arrow-left" data-direction="previous"></span>
+        <span class="control icon-arrow-right" data-direction="next"></span>
+        <span class="grid icon-grid"></span>
+        <span class="fs-toggle icon-fullscreen"></span>
+    </div>
+</div>
+
+
+<script>
+    $(document).ready(function () {
+        $('#gallery-container').sGallery({
+            fullScreenEnabled: true
+        });
+        
+    });
+
+</script>
+</body>
+</html>
